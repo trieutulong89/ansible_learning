@@ -1,0 +1,11 @@
+---
+# Essential tasks, should run on all hosts
+ - name: create sysadmin user
+   group: name=sysadmin state=present
+ - name: create helpdesk user
+   group: name=helpdesk state=present
+ - name: install htop package
+   apt:
+     name: htop
+     state: latest
+     update_cache: yes

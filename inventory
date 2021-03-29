@@ -1,0 +1,5 @@
+[test]
+localhost ansible_ssh_user=thanhvan
+
+[vagrant]
+192.168.8.103 ansible_ssh_user=vagrant

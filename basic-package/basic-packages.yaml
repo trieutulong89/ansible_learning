@@ -1,0 +1,10 @@
+---
+- hosts: vagrant
+  become: yes
+  tasks:
+    - name: Install basic packages
+      apt:
+        pkg:
+        - vim
+        - htop
+        - net-tools
